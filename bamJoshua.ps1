@@ -80,7 +80,7 @@ $Bam = Foreach ($Sid in $Users){$u++
             
         foreach($rp in $rpath){
            $BamItems = Get-Item -Path "$($rp)UserSettings\$Sid" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Property
-           Write-Host -ForegroundColor Green "Extracting " -NoNewLine
+           Write-Host -ForegroundColor White "Extracting " -NoNewLine
            Write-Host -ForegroundColor magenta "$($rp)UserSettings\$SID"
            $bi = 0 
 
